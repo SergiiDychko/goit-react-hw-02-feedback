@@ -10,7 +10,7 @@ class App extends Component {
     neutral: 0,
     bad: 0,
   };
-
+ 
   handleFeedback = (evt) => {
     const { name } = evt.target;
     this.setState(prevState => ({[name]: prevState[name] + 1}))
